@@ -1,0 +1,35 @@
+
+plugins:
+    - nci-projects-reloader
+    - nci-static-server
+    - nci-rest-api-server
+    - nci-mail-notification
+    - nci-scheduler
+    #ui better be last plugin
+    - nci-classic-ui
+
+nodes:
+    - type: local
+      maxExecutorsCount: 3
+
+http:
+    host: 127.11.40.1
+    port: 8080
+    url: http://classicui-ncidemo.rhcloud.com
+    static:
+        locations:
+            - url: !!js/regexp ^/(js|css|fonts|images)/
+              root: node_modules/nci-classic-ui/static/
+            - url: !!js/regexp ^/projects/(\w|-)+/workspace/
+              root: data/
+
+storage:
+    backend: leveldown
+
+notify:
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        auth:
+            user: bot.nci@gmail.com
+            pass: zAmWIeLXfHhLT0xUPhQK
