@@ -13,8 +13,8 @@ nodes:
       maxExecutorsCount: 3
 
 http:
-    host: !env OPENSHIFT_NODEJS_IP
-    port: !env OPENSHIFT_NODEJS_PORT
+    host: 127.11.40.1
+    port: 8080
     url: http://classicui-ncidemo.rhcloud.com
     static:
         locations:
