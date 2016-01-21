@@ -9,7 +9,7 @@
     "nci-scheduler": "1.0.0",
     "nci-static-server": "1.0.0",
     "nci-yaml-reader": "1.1.0",
-    "nci-classic-ui": "0.6.2",
+    "nci-classic-ui": "0.6.3",
     "leveldown": "1.4.3"
   },
   "private": true,
