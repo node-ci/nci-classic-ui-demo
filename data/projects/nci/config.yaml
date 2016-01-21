@@ -16,4 +16,8 @@ notify:
 
 steps:
     sync: npm install && npm prune
-    test: npm test
+    test: >
+        node_modules/.bin/mocha \
+          --reporter spec \
+          --grep "mercurial|git|local executor|Distributor run self after" \
+          --invert --bail --timeout 10000
