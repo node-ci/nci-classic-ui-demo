@@ -1,3 +1,4 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+# nci-classic-ui-online-demo
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+Repository with sample nci classic ui deployment which is available [here](http://classicui-ncidemo.rhcloud.com/).
+
